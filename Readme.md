@@ -66,7 +66,7 @@ Notre solution est l'inférence simultanée des modèles : `SegFormer-B5 IGB Nor
 2. **Télécharger les données et les modèles**
 
 Télécharger et décompresser les données et les modèles respectivant dans les dossiers `/data` & `/models` 
-- MODELES ONNX (float16) : https://drive.google.com/drive/folders/12ll_y0AaqEA9-EpajPM_OADoJrOuLc1c?usp=drive_link
+- Modèles onnx (float16) : https://drive.google.com/drive/folders/12ll_y0AaqEA9-EpajPM_OADoJrOuLc1c?usp=drive_link
 - données de test (données sentinel2 préprocessées + images aeriennes à la racine du même dossier) : https://drive.google.com/drive/folders/1MJ_Cc4lRRQDEbmLvi0GeGwP__4DxH5-z?usp=sharing
   
 3. **Inférence**
