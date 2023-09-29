@@ -61,7 +61,7 @@ Notre solution est l'inférence simultanée des modèles : SegFormer-B5 IGB Norm
 
 2. **Télécharger les données et les modèles**
 
-Télécharger et décompresser les données et les modèles  (enregistrer l'ensemble des fichiers models et images à la racine du dossier) respectivant dans les dossiers `/data` & `/models` 
+Télécharger et décompresser les données et les modèles  (enregistrer l'ensemble des fichiers images et modèles à la racine du dossier) respectivant dans les dossiers `/data` & `/models` 
 - onnx models : https://drive.google.com/drive/folders/12ll_y0AaqEA9-EpajPM_OADoJrOuLc1c?usp=drive_link
 - données de test : https://drive.google.com/drive/folders/1MJ_Cc4lRRQDEbmLvi0GeGwP__4DxH5-z?usp=sharing
   
