@@ -19,13 +19,15 @@ Inférence moyennée des 4 modèles
 ![Modèles ensemblistes](https://raw.githubusercontent.com/alanent/flair2_ign_2nd_place/main/assets/ensemble_models.png)
 
 
+
+
 ## Pseudo labeling
 
 Ce résultat est utilisé pour réentrainer le modèle suivant sur 2 époques supplémentaires.
 
 | Modèle                                            | GPU d'Entraînement  | Lot d'Entraînement | Nombre d'Époques | Mean IoU (test)  | Colab Link       |
 |---------------------------------------------------|---------------------|--------------------|------------------|------------------|------------------|
-| SegFormer-B5 IGB Norm Aerial Pseudo labeling      | NVIDIA Tesla V100   | 4                  | 2                | 63.3             | -                |
+| SegFormer-B5 IGB Norm Aerial Pseudo labeling      | NVIDIA Tesla V100   | 4                  | 2                | 63.3             | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/14QWUJzTqbJfjtE54587aJbLenawV-7Lm/view?usp=sharing)                   |
 
 ## Environnement d'Exécution
 
