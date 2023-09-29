@@ -9,7 +9,7 @@ La solution proposée est d'utilisée différents type de preprocessing des donn
 
 - Pour l'utilisation des données sentinels-2, nous avons filtrer les données contenant des nuages et de la neige. Nous enregistrons ensuite les données correpondantes à chaque image aérienne dans un fichier appelé SEN_{Img_id}.npy Pour chaque image aérienne, nous normalisons cette image par la moyenne et l'écart type de ce fichier .npy
 
-- Pour la normalisation imagenet, nous utilisons la classe SegformerFeatureExtractor intiale.
+- Pour la normalisation imagenet, nous avons repris le preprocessing effectué par la classe SegformerFeatureExtractor de HuggingFace.
 
 - Pour la normalisation des images aeriennes nous utilisons, les moyennes et les écart-type de chaque couche sur l'ensemble du dataset.
 
