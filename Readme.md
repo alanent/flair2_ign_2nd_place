@@ -2,6 +2,8 @@
 
 Ce référentiel contient les résultats des tests de performance de différents modèles SegFormer sur diverses configurations matérielles et d'entraînement.
 
+source des scripts huggingface : https://huggingface.co/blog/fine-tune-segformer
+
 ## Entraînement
 
 | Modèle                           | GPU d'Entraînement  | Lot d'Entraînement | Nombre d'Époques | Mean IoU (test)  | Models Link      | Training Script  |
