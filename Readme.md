@@ -35,7 +35,7 @@ Le résultat est ensuite utilisé pour réentrainer le modèle suivant sur 2 ép
 
 ## Preprocessing des données sentinel2
 
-Exécutez `./scripts/preprocess_sentinel2_imagery_test.py`.
+Exécutez `./scripts/preprocess_sentinel2_files.py`.
 
 
 ## Conversion des Modèles en ONNX FP16
