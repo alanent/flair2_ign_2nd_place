@@ -9,7 +9,7 @@ Ce référentiel contient les résultats des tests de performance de différents
 | SegFormer-B5 RGB Norm Sentinel2  | NVIDIA Tesla A100   | 8                  | 4                | 61.3             | -                | -                |
 | SegFormer-B5 RGB Norm Aerial     | NVIDIA Tesla A100   | 8                  | 4                | 60.9             | -                | -                |
 | SegFormer-B5 RGB Norm ImageNet   | NVIDIA Tesla A100   | 8                  | 4                | 61.3             | -                | -                |
-| SegFormer-B5 IGB Norm Aerial     | NVIDIA Tesla V100   | 4                  | 8                | 62.4             | -                | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](URL_DU_CAHIER_COLAB)               |
+| SegFormer-B5 IGB Norm Aerial     | NVIDIA Tesla V100   | 4                  | 8                | 62.4             | -                | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Cwkb2vIiXiXxhZaZ-98Cuusne_mp4KX?authuser=1#scrollTo=LDZvoduQLNjI)               |
 
 ## Inférence groupée & Pseudo labeling
 
