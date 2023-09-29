@@ -14,7 +14,10 @@ Source des scripts huggingface : https://huggingface.co/blog/fine-tune-segformer
 
 ## Inférence groupée & Pseudo labeling
 
-Inférence moyennée des 4 modèles (voir le schéma ci-dessous).
+Inférence moyennée des 4 modèles 
+
+![Modèles ensemblistes](https://raw.githubusercontent.com/alanent/flair2_ign_2nd_place/main/assets/ensemble_models.png)
+
 
 ## Pseudo labeling
 
