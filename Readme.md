@@ -10,7 +10,7 @@ Ce référentiel contient les résultats des tests de performance de différents
 
 Nous avons entrainé 4 segformers avec différents pré-processing appliquées aux données :
 
-- Pour l'utilisation des données sentinels-2, nous avons filtrer les données contenant des nuages et de la neige. Nous enregistrons ensuite les données correpondantes à chaque image aérienne dans un fichier appelé `SEN_{Img_id}.npy`. Pour chaque image aérienne, nous normalisons cette image par les moyenne et l'écart-types de chaque chanaux (rgb) de l'image sentinel2 moyennée `SEN_{Img_id}.npy` correspondante.
+- Pour l'utilisation des données sentinels-2, nous avons filtrer les données contenant des nuages et de la neige. Nous enregistrons ensuite les données correpondantes à chaque image aérienne dans un fichier appelé `SEN_{Img_id}.npy`. Pour chaque image aérienne `IMG_{Img_id}.npy`, nous normalisons cette image par les moyennes et les écart-types de chaque chanaux (rgb) de l'image sentinel2 `SEN_{Img_id}.npy` précédement créée.
 
 - Pour la normalisation imagenet, nous avons repris le preprocessing effectué par la classe SegformerFeatureExtractor de HuggingFace.
 
