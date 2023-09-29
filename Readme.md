@@ -1,4 +1,4 @@
-# SegFormer Models Benchmark
+# IGN FLAIR2 Solution
 
 Ce référentiel contient les résultats des tests de performance de différents modèles SegFormer sur diverses configurations matérielles et d'entraînement.
 
