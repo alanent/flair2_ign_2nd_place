@@ -84,6 +84,5 @@ SegFormer-B5 IGB Norm Aerial pseudo labeled + SegFormer-B5 RGB Norm Sentinel2 + 
 
 Exécutez `run.py`.
 
-[Lien vers le notebook complet dans Colab](lien-vers-notebook).
-
-Pour toute question ou commentaire, veuillez contacter l'équipe de développement à l'adresse [email@example.com](mailto:email@example.com).
+Environnement Colab : 
+[![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1mM4oTfXj6wthzVneihG-BHHI800BOz_M/view?usp=sharing)
