@@ -30,7 +30,7 @@ Le résultat est ensuite utilisé pour réentrainer le modèle suivant sur 2 ép
 
 | Modèle                                            | GPU d'Entraînement  | Lot d'Entraînement | Nombre d'Époques | Mean IoU (test)  | Models Link      | Colab Link       |
 |---------------------------------------------------|---------------------|--------------------|------------------|------------------|------------------|------------------|
-| SegFormer-B5 IGB Norm Aerial + Pseudo labeling    | NVIDIA Tesla V100   | 4                  | 2                | 63.3             | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/14QWUJzTqbJfjtE54587aJbLenawV-7Lm/view?usp=sharing)                   |
+| SegFormer-B5 IGB Norm Aerial + Pseudo labeling    | NVIDIA Tesla V100   | 4                  | 2                | 63.3             |                   | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/14QWUJzTqbJfjtE54587aJbLenawV-7Lm/view?usp=sharing)                   |
 
 
 ## Preprocessing des données sentinel2
