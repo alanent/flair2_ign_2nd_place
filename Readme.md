@@ -1,9 +1,8 @@
 # IGN FLAIR2 Solution
 
-Ce référentiel contient les résultats des tests de performance de différents modèles SegFormer sur diverses configurations matérielles et d'entraînement.
-
+Ce référentiel contient les résultats du concour FLAIR2 organisé par l'IGN.
+- Lien du concours : https://codalab.lisn.upsaclay.fr/competitions/13447#results
 - Source des scripts : https://huggingface.co/blog/fine-tune-segformer
-
 - Source de données : https://ignf.github.io/FLAIR/#FLAIR2
 
 ## Entraînement
