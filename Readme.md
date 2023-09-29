@@ -65,7 +65,7 @@ pip install -r requirements.txt
 
 2. **Télécharger les données et les modèles**
 
-Télécharger et dezziper les données et les modèles respectivant dans les dossiers '/input' & '/models'.
+Télécharger et dezziper les données et les modèles respectivant dans les dossiers `/input` & `/models`.
 
 3. **Inférence**
 
