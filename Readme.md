@@ -2,9 +2,9 @@
 
 Ce référentiel contient les résultats des tests de performance de différents modèles SegFormer sur diverses configurations matérielles et d'entraînement.
 
-- Source originelle des scripts : https://huggingface.co/blog/fine-tune-segformer
+- Source des scripts : https://huggingface.co/blog/fine-tune-segformer
 
-Vous pouvez accéder à l'ensemble des données [ici](https://ignf.github.io/FLAIR/#FLAIR2).
+- Source de données : [ici](https://ignf.github.io/FLAIR/#FLAIR2).
 
 ## Entraînement
 
