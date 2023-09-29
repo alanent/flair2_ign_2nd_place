@@ -30,12 +30,10 @@ from torch.nn.functional import interpolate
 import onnx
 from onnxconverter_common import auto_mixed_precision, auto_convert_mixed_precision, float16
 
-
 ##############################################################################################################################
 # CHECK CUDA DEVICE
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 device
-
 
 ##############################################################################################################################
 # load LABEL DICT AND FEATURE EXTRACTOR
@@ -49,13 +47,10 @@ classes = ['None','building','pervious surface','impervious surface','bare soil'
 id2label = array_to_dict(classes)
 label2id = {v: k for k, v in id2label.items()}
 num_labels = len(id2label)
-
 feature_extractor = SegformerFeatureExtractor(ignore_index=0, reduce_labels=False, do_resize=False, do_rescale=False, do_normalize=False)
-
 
 ##############################################################################################################################
 # LOAD MODELS
-
 pretrained_model_name_b5_sentinel_norm =  "./models/segformer_b5_rgb_norm_sentinel2-4e"
 model_b5_sentinel_norm = SegformerForSemanticSegmentation.from_pretrained(
     pretrained_model_name_b5_sentinel_norm,
@@ -86,7 +81,6 @@ torch.onnx.export(model_b5_igb_norm, dummy_input, "model_b5_igb_norm.onnx", verb
 
 ##############################################################################################################################
 # CONVERT TO ONNX FLOAT 16 // REDUCE THE SIZE OF THE MODEL BY 2
-
 model = onnx.load("model_b5_sentinel_norm.onnx")
 model_fp16 = float16.convert_float_to_float16(model)
 onnx.save(model_fp16, "model_b5_sentinel_norm_fp16.onnx")
