@@ -1,7 +1,8 @@
 # SegFormer Models Benchmark
 
 Ce référentiel contient les résultats des tests de performance de différents modèles SegFormer sur diverses configurations matérielles et d'entraînement.
-Source des scripts huggingface : https://huggingface.co/blog/fine-tune-segformer
+
+- Source originelle des scripts : https://huggingface.co/blog/fine-tune-segformer
 
 Vous pouvez accéder à l'ensemble des données [ici](https://ignf.github.io/FLAIR/#FLAIR2).
 
