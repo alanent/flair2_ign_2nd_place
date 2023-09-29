@@ -46,7 +46,7 @@ def lister_images(dossier):
 
 
 # Spécifiez le chemin du dossier contenant les images
-dossier_images = "./data/"
+dossier_images = "./data/content/temp/"
 
 # Obtenez la liste des chemins et noms d'images
 chemins, noms = lister_images(dossier_images)
