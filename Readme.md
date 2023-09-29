@@ -80,9 +80,10 @@ Liens vers les poids des modèles ONNX (voir le tableau dans le notebook).
 
 5. **Prédiction Finale**
 
-SegFormer-B5 IGB Norm Aerial pseudo labeled + SegFormer-B5 RGB Norm Sentinel2 + sélection des classes = 63.55 IoU ([lien vers le notebook d'inférence](lien-vers-notebook)).
+SegFormer-B5 IGB Norm Aerial pseudo labeled + SegFormer-B5 RGB Norm Sentinel2 + sélection des classes = 63.55 IoU ([![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1mM4oTfXj6wthzVneihG-BHHI800BOz_M/view?usp=sharing)).
 
 Exécutez `run.py`.
 
-Environnement Colab : 
-[![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1mM4oTfXj6wthzVneihG-BHHI800BOz_M/view?usp=sharing)
+
+
+
