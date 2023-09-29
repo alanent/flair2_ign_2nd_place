@@ -5,6 +5,15 @@ Source des scripts huggingface : https://huggingface.co/blog/fine-tune-segformer
 
 ## Entraînement
 
+La solution proposée est d'utilisée différents type de preprocessing des données afin a créer de la variété dans nos données. Nous avons entrainé 4 segformers avec différents processing :
+
+- Pour l'utilisation des données sentinels-2, nous avons filtrer les données contenant des nuages et de la neige. Nous enregistrons ensuite les données correpondantes à chaque image aérienne dans un fichier appelé SEN_{Img_id}.npy Pour chaque image aérienne, nous normalisons cette image par la moyenne et l'écart type de ce fichier .npy
+
+- Pour la normalisation imagenet, nous utilisons la classe SegformerFeatureExtractor intiale.
+
+- Pour la normalisation des images aeriennes nous utilisons, les moyennes et les écart-type de chaque couche sur l'ensemble du dataset.
+
+
 | Modèle                           | GPU d'Entraînement  | Lot d'Entraînement | Nombre d'Époques | Mean IoU (test)  | Models Link      | Training Script  |
 |----------------------------------|---------------------|--------------------|------------------|------------------|------------------|------------------|
 | SegFormer-B5 RGB Norm Sentinel2  | NVIDIA Tesla A100   | 8                  | 4                | 61.3             | -                | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Cwkb2vIiXiXxhZaZ-98Cuusne_mp4KX?authuser=1#scrollTo=LDZvoduQLNjI)                |
