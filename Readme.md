@@ -10,7 +10,7 @@ Vous pouvez accéder à l'ensemble des données [ici](https://ignf.github.io/FLA
 La solution proposée est d'utilisée différents type de preprocessing des données afin a créer de la variété dans nos données. Nous avons entrainé 4 segformers avec différents processing :
 
 - Pour l'utilisation des données sentinels-2, nous avons filtrer les données contenant des nuages et de la neige. Nous enregistrons ensuite les données correpondantes à chaque image aérienne dans un fichier appelé SEN_{Img_id}.npy Pour chaque image aérienne, nous normalisons cette image par la moyenne et l'écart type de ce fichier `.npy`
-- sentinel preprocessing : [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)]() 
+- Transformation des données Sentinel2 : [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)]() 
 
 
 - Pour la normalisation imagenet, nous avons repris le preprocessing effectué par la classe SegformerFeatureExtractor de HuggingFace.
