@@ -43,9 +43,9 @@ Exécutez `./scripts/convert_segformers_onnx.py`.
 
 ## Solution finale
 
-SegFormer-B5 IGB Norm Aerial pseudo labeled + SegFormer-B5 RGB Norm Sentinel2 + sélection des classes = 63.55 IoU. 
+Notre solution est l'inférence simultanée des modèles : SegFormer-B5 IGB Norm Aerial pseudo labeled + SegFormer-B5 RGB Norm Sentinel2. Une sélection des résultats par classe est effectué dans un deuxième temps. Le score maximal obtenu est de 63.55 IoU. 
 
-[![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1mM4oTfXj6wthzVneihG-BHHI800BOz_M/view?usp=sharing)
+- Inférence sur Colab : [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1mM4oTfXj6wthzVneihG-BHHI800BOz_M/view?usp=sharing)
 
 ### Environnement d'Exécution
 
