@@ -1,8 +1,7 @@
 # SegFormer Models Benchmark
 
 Ce référentiel contient les résultats des tests de performance de différents modèles SegFormer sur diverses configurations matérielles et d'entraînement.
-
-source des scripts huggingface : https://huggingface.co/blog/fine-tune-segformer
+Source des scripts huggingface : https://huggingface.co/blog/fine-tune-segformer
 
 ## Entraînement
 
@@ -14,7 +13,7 @@ source des scripts huggingface : https://huggingface.co/blog/fine-tune-segformer
 | SegFormer-B5 IGB Norm Aerial     | NVIDIA Tesla V100   | 4                  | 8                | 62.4             | -                | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/17Cwkb2vIiXiXxhZaZ-98Cuusne_mp4KX/view?usp=sharing)               |
 
 ## Inférence groupée & Pseudo labeling
-https://drive.google.com/file/d/17Cwkb2vIiXiXxhZaZ-98Cuusne_mp4KX/view?usp=sharing
+
 Inférence moyennée des 4 modèles (voir le schéma ci-dessous).
 
 ## Pseudo labeling
