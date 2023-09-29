@@ -26,16 +26,11 @@ Nous avons entrainé 4 segformers avec différents pré-processing appliquées a
 
 ## Inférence groupée & Pseudo labeling
 
-Inférence moyennée des 4 modèles 
+Nous avons ensuite effectué une inférence simultanée des 4 modèles sur le jeu de test.
 
 ![Modèles ensemblistes](https://raw.githubusercontent.com/alanent/flair2_ign_2nd_place/main/assets/ensemble_models.png)
 
-
-
-
-## Pseudo labeling
-
-Ce résultat est utilisé pour réentrainer le modèle suivant sur 2 époques supplémentaires.
+Le résultat est utilisé pour réentrainer le modèle suivant sur 2 époques supplémentaires.
 
 | Modèle                                            | GPU d'Entraînement  | Lot d'Entraînement | Nombre d'Époques | Mean IoU (test)  | Colab Link       |
 |---------------------------------------------------|---------------------|--------------------|------------------|------------------|------------------|
