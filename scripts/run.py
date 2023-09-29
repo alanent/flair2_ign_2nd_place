@@ -1,21 +1,4 @@
-# -*- coding: utf-8 -*-
-
-
-import accelerate
-import transformers
-import torch
-
-print(transformers.__version__, accelerate.__version__)
-print(torch.__version__)
-
-from torch.utils.data import Dataset, DataLoader
-from transformers import AdamW
-from torch import nn
-from sklearn.metrics import accuracy_score
-from tqdm.notebook import tqdm
 import os
-from PIL import Image
-from transformers import SegformerForSemanticSegmentation, SegformerImageProcessor,SegformerFeatureExtractor
 import pandas as pd
 import cv2
 import numpy as np
@@ -23,26 +6,27 @@ import albumentations as aug
 import random
 import rasterio
 from pathlib import Path
-import splitfolders
-import shutil
 import math
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras import backend as K
 import time
-from torch.nn.functional import interpolate
 import onnx
-from onnxconverter_common import auto_mixed_precision, auto_convert_mixed_precision, float16
 
+##############################################################################################################################
 # Spécifiez les fournisseurs d'exécution que vous souhaitez utiliser
+
 providers = ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'CPUExecutionProvider']
 
 import onnxruntime as ort
 ort.get_device()
 
-ort_session_b5_sentinel_norm = ort.InferenceSession("/content/gdrive/MyDrive/FLAIR2/onnx/model_b5_sentinel_norm_fp16.onnx", providers=providers)
-ort_session_b5_igb_norm = ort.InferenceSession("/content/gdrive/MyDrive/FLAIR2/onnx/model_b5_igb_norm_fp16.onnx", providers=providers)
+ort_session_b5_sentinel_norm = ort.InferenceSession("./models/model_b5_sentinel_norm_fp16.onnx", providers=providers)
+ort_session_b5_igb_norm = ort.InferenceSession("./models/model_b5_igb_norm_fp16.onnx", providers=providers)
+
+##############################################################################################################################
+# Get path and names of files
 
 def lister_images(dossier):
     chemins_images = []
@@ -67,12 +51,8 @@ dossier_images = "./data/"
 # Obtenez la liste des chemins et noms d'images
 chemins, noms = lister_images(dossier_images)
 
-"""# Inference
-
----
-
-
-"""
+##############################################################################################################################
+# Inference
 
 debut = time.time()
 ix=0
@@ -81,9 +61,7 @@ for chemin, nom in zip(chemins, noms):
         fin = time.time()
         temps_execution = int(fin - debut)
         print("nombre d'executions : ", ix, f" // temps d'execution : {temps_execution} secondes")
-
     ix= ix+1
-
 
 
     # get raster file
