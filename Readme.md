@@ -7,7 +7,7 @@ Ce référentiel contient les résultats du concour FLAIR2 organisé par l'IGN.
 
 ## Entraînement
 
-Nous avons entrainé 4 segformers avec différents pré-processing appliquées aux données :
+Nous avons entrainé 4 segformers avec 4 pré-processing et données différentes :
 
 - Pour l'utilisation des données sentinels-2, nous avons filtrer les données contenant des nuages et de la neige. Nous enregistrons ensuite les données correpondantes à chaque image aérienne dans un fichier appelé `SEN_{Img_id}.npy`. Pour chaque image aérienne `IMG_{Img_id}.npy`, nous normalisons cette image par les moyennes et les écart-types de chaque chanaux (rgb) de l'image sentinel2 `SEN_{Img_id}.npy` précédement créée.
 
