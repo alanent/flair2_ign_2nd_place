@@ -67,7 +67,7 @@ Notre solution est l'inférence simultanée des modèles : `SegFormer-B5 IGB Nor
 
 Télécharger et décompresser les données et les modèles respectivant dans les dossiers `/data` & `/models` 
 - Modèles onnx (float16) : [![Accéder aux modèles](https://img.shields.io/badge/Mod%C3%A8les-Google%20Drive-blue.svg)](https://drive.google.com/drive/folders/12ll_y0AaqEA9-EpajPM_OADoJrOuLc1c?usp=drive_link)
-- données de test (données sentinel2 préprocessées + images aeriennes à la racine du même dossier) : [![Accéder aux modèles](https://img.shields.io/badge/Mod%C3%A8les-Google%20Drive-blue.svg)](https://drive.google.com/file/d/1D4ip6grC8rQm5bsM2xLgAeds6DgJgk8Q/view?usp=sharing)
+- données de test (données sentinel2 préprocessées + images aeriennes à la racine du même dossier) : [![Accéder aux modèles](https://img.shields.io/badge/donnees-Google%20Drive-blue.svg)](https://drive.google.com/file/d/1D4ip6grC8rQm5bsM2xLgAeds6DgJgk8Q/view?usp=sharing)
   
 3. **Inférence**
 
