@@ -24,7 +24,7 @@ Nous avons ensuite effectué une inférence simultanée des 4 modèles sur le je
 
 ![Modèles ensemblistes](https://raw.githubusercontent.com/alanent/flair2_ign_2nd_place/main/assets/ensemble_models.png)
 
-Le résultat est utilisé pour réentrainer le modèle suivant sur 2 époques supplémentaires.
+Le résultat est ensuite utilisé pour réentrainer le modèle suivant sur 2 époques supplémentaires.
 
 | Modèle                                            | GPU d'Entraînement  | Lot d'Entraînement | Nombre d'Époques | Mean IoU (test)  | Colab Link       |
 |---------------------------------------------------|---------------------|--------------------|------------------|------------------|------------------|
