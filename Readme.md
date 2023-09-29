@@ -30,11 +30,15 @@ Le résultat est utilisé pour réentrainer le modèle suivant sur 2 époques su
 |---------------------------------------------------|---------------------|--------------------|------------------|------------------|------------------|
 | SegFormer-B5 IGB Norm Aerial Pseudo labeling      | NVIDIA Tesla V100   | 4                  | 2                | 63.3             | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/14QWUJzTqbJfjtE54587aJbLenawV-7Lm/view?usp=sharing)                   |
 
+
+## Preprocessing des données sentinel2
+
+Exécutez `./scripts/preprocess_sentinel2_imagery_test.py`.
+
+
 ## Conversion des Modèles en ONNX FP16
 
 Exécutez `./scripts/convert_segformers_onnx.py`.
-
-
 
 
 ## Solution finale
@@ -57,11 +61,14 @@ pip install -r requirements.txt
 
 2. **Télécharger les données et les modèles**
 
-Télécharger et dezziper les données et les modèles respectivant dans les dossiers `/input` & `/models`.
+Télécharger et décompresser les données et les modèles respectivant dans les dossiers `/data` & `/models`.
+
+- onnx models : https://drive.google.com/drive/folders/12ll_y0AaqEA9-EpajPM_OADoJrOuLc1c?usp=drive_link
+- preprocessed data : https://drive.google.com/drive/folders/1MJ_Cc4lRRQDEbmLvi0GeGwP__4DxH5-z?usp=sharing
 
 3. **Inférence**
 
- exécutez `run.py`.
+ exécutez `./scripts/run.py`.
 
 
 
