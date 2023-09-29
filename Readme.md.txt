@@ -1,0 +1,74 @@
+# SegFormer Models Benchmark
+
+Ce référentiel contient les résultats des tests de performance de différents modèles SegFormer sur diverses configurations matérielles et d'entraînement.
+
+## Entraînement
+
+| Modèle                           | GPU d'Entraînement  | Lot d'Entraînement | Nombre d'Époques | Mean IoU (test)  | Models Link      | Training Script  |
+|----------------------------------|---------------------|--------------------|------------------|------------------|------------------|------------------|
+| SegFormer-B5 RGB Norm Sentinel2  | NVIDIA Tesla A100   | 8                  | 4                | 61.3             | -                | -                |
+| SegFormer-B5 RGB Norm Aerial     | NVIDIA Tesla A100   | 8                  | 4                | 60.9             | -                | -                |
+| SegFormer-B5 RGB Norm ImageNet   | NVIDIA Tesla A100   | 8                  | 4                | 61.3             | -                | -                |
+| SegFormer-B5 IGB Norm Aerial     | NVIDIA Tesla V100   | 4                  | 8                | 62.4             | -                | -                |
+
+## Inférence groupée & Pseudo labeling
+
+Inférence moyennée des 4 modèles (voir le schéma ci-dessous).
+
+## Pseudo labeling
+
+Ce résultat est utilisé pour réentrainer le modèle suivant sur 2 époques supplémentaires.
+
+| Modèle                                            | GPU d'Entraînement  | Lot d'Entraînement | Nombre d'Époques | Mean IoU (test)  | Colab Link       |
+|---------------------------------------------------|---------------------|--------------------|------------------|------------------|------------------|
+| SegFormer-B5 IGB Norm Aerial Pseudo labeling      | NVIDIA Tesla V100   | 4                  | 2                | 63.3             | -                |
+
+## Environnement d'Exécution
+
+- **Environnement**: Colab Pro
+- **GPU**: NVIDIA Tesla T4
+- **RAM**: Haute capacité
+
+## Instructions d'Utilisation
+
+1. **Installation des Dépendances**
+
+pip install -r requirements.txt
+
+
+
+2. **Télécharger les Données**
+
+Vous pouvez accéder aux données [ici](https://ignf.github.io/FLAIR/#FLAIR2).
+
+| Data                                        | Size      | Type  | Link                                        |
+|---------------------------------------------|-----------|-------|---------------------------------------------|
+| Aerial images - train                       | 50.7 Go   | .zip  | -                                           |
+| Aerial images - test                        | 13.4 Go   | .zip  | -                                           |
+| Sentinel-2 images - train                   | 22.8 Go   | .zip  | -                                           |
+| Sentinel-2 images - test                    | 6 Go      | .zip  | -                                           |
+| Labels - train                              | 485 Mo    | .zip  | -                                           |
+| Labels - test                               | 108 Mo    | .zip  | -                                           |
+| Aerial metadata                             | 16.1 Mo   | .json | -                                           |
+| Aerial <-> Sentinel-2 matching dict         | 16.1 Mo   | .json | -                                           |
+| Areas shapes                                | 392 Ko    | .gpkg | -                                           |
+
+3. **Prétraitement des Données Sentinel**
+
+Exécutez `preprocess_sentinel_data.py`.
+
+4. **Conversion des Modèles en ONNX FP16**
+
+Exécutez `convert_models.py`.
+
+Liens vers les poids des modèles ONNX (voir le tableau dans le notebook).
+
+5. **Prédiction Finale**
+
+SegFormer-B5 IGB Norm Aerial pseudo labeled + SegFormer-B5 RGB Norm Sentinel2 + sélection des classes = 63.55 IoU ([lien vers le notebook d'inférence](lien-vers-notebook)).
+
+Exécutez `run.py`.
+
+[Lien vers le notebook complet dans Colab](lien-vers-notebook).
+
+Pour toute question ou commentaire, veuillez contacter l'équipe de développement à l'adresse [email@example.com](mailto:email@example.com).
