@@ -1,1 +1,1 @@
-put processed test images here
+dossiers contenant les images
