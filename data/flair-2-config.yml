@@ -1,0 +1,19 @@
+data:
+    path_aerial_train: "/content/flair_2_aerial_train/"
+    path_sen_train: "/content/flair_2_sen_train/"
+    path_labels_train: "/content/flair_labels_train/"
+
+    path_aerial_test: "/content/flair_2_aerial_test/"
+    path_sen_test: "/content/flair_2_sen_test/"
+
+ 
+    path_sp_centroids: "/content/gdrive/MyDrive/FLAIR2/flair_2_dataset/flair-2_centroids_sp_to_patch.json"
+    path_metadata_aerial: "/content/gdrive/MyDrive/FLAIR2/flair_2_dataset/flair_aerial_metadata.json"
+
+out_folder: "./flair2/"
+out_model_name: "flair-2-baseline"
+
+
+# Sentinel Time Series filtering
+filter_clouds: True
+average_month: True
