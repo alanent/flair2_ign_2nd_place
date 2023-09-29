@@ -56,7 +56,7 @@ SegFormer-B5 IGB Norm Aerial pseudo labeled + SegFormer-B5 RGB Norm Sentinel2 + 
 
 1. **Installation des Dépendances**
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
 2. **Télécharger les données et les modèles**
