@@ -4,7 +4,7 @@ Ce référentiel contient les résultats des tests de performance de différents
 
 - Source des scripts : https://huggingface.co/blog/fine-tune-segformer
 
-- Source de données : [ici](https://ignf.github.io/FLAIR/#FLAIR2).
+- Source de données : https://ignf.github.io/FLAIR/#FLAIR2
 
 ## Entraînement
 
