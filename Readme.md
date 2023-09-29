@@ -8,15 +8,13 @@ Ce référentiel contient les résultats des tests de performance de différents
 
 ## Entraînement
 
-La solution proposée est d'utilisée différents type de preprocessing des données afin a créer de la variété dans nos données. Nous avons entrainé 4 segformers avec différents processing :
+Nous avons entrainé 4 segformers avec différents pré-processing appliquées aux données :
 
-- Pour l'utilisation des données sentinels-2, nous avons filtrer les données contenant des nuages et de la neige. Nous enregistrons ensuite les données correpondantes à chaque image aérienne dans un fichier appelé SEN_{Img_id}.npy Pour chaque image aérienne, nous normalisons cette image par la moyenne et l'écart type de ce fichier `.npy`
-- Transformation des données Sentinel2 : [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)]() 
-
+- Pour l'utilisation des données sentinels-2, nous avons filtrer les données contenant des nuages et de la neige. Nous enregistrons ensuite les données correpondantes à chaque image aérienne dans un fichier appelé `SEN_{Img_id}.npy`. Pour chaque image aérienne, nous normalisons cette image par les moyenne et l'écart-types de chaque chanaux (rgb) de l'image sentinel2 moyennée `SEN_{Img_id}.npy` correspondante.
 
 - Pour la normalisation imagenet, nous avons repris le preprocessing effectué par la classe SegformerFeatureExtractor de HuggingFace.
 
-- Pour la normalisation des images aeriennes nous utilisons, les moyennes et les écart-type de chaque couche sur l'ensemble du dataset.
+- Pour la normalisation des images aeriennes nous utilisons, les moyennes et les écart-types de chaque canaux de l'ensemble du dataset.
 
 
 | Modèle                           | GPU d'Entraînement  | Lot d'Entraînement | Nombre d'Époques | Mean IoU (test)  | Models Link      | Training Script  |
