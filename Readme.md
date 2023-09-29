@@ -6,13 +6,13 @@ Ce référentiel contient les résultats des tests de performance de différents
 
 | Modèle                           | GPU d'Entraînement  | Lot d'Entraînement | Nombre d'Époques | Mean IoU (test)  | Models Link      | Training Script  |
 |----------------------------------|---------------------|--------------------|------------------|------------------|------------------|------------------|
-| SegFormer-B5 RGB Norm Sentinel2  | NVIDIA Tesla A100   | 8                  | 4                | 61.3             | -                | -                |
+| SegFormer-B5 RGB Norm Sentinel2  | NVIDIA Tesla A100   | 8                  | 4                | 61.3             | -                | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Cwkb2vIiXiXxhZaZ-98Cuusne_mp4KX?authuser=1#scrollTo=LDZvoduQLNjI)                |
 | SegFormer-B5 RGB Norm Aerial     | NVIDIA Tesla A100   | 8                  | 4                | 60.9             | -                | -                |
 | SegFormer-B5 RGB Norm ImageNet   | NVIDIA Tesla A100   | 8                  | 4                | 61.3             | -                | -                |
-| SegFormer-B5 IGB Norm Aerial     | NVIDIA Tesla V100   | 4                  | 8                | 62.4             | -                | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Cwkb2vIiXiXxhZaZ-98Cuusne_mp4KX?authuser=1#scrollTo=LDZvoduQLNjI)               |
+| SegFormer-B5 IGB Norm Aerial     | NVIDIA Tesla V100   | 4                  | 8                | 62.4             | -                | [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/17Cwkb2vIiXiXxhZaZ-98Cuusne_mp4KX/view?usp=sharing)               |
 
 ## Inférence groupée & Pseudo labeling
-
+https://drive.google.com/file/d/17Cwkb2vIiXiXxhZaZ-98Cuusne_mp4KX/view?usp=sharing
 Inférence moyennée des 4 modèles (voir le schéma ci-dessous).
 
 ## Pseudo labeling
