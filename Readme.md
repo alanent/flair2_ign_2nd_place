@@ -3,6 +3,8 @@
 Ce référentiel contient les résultats des tests de performance de différents modèles SegFormer sur diverses configurations matérielles et d'entraînement.
 Source des scripts huggingface : https://huggingface.co/blog/fine-tune-segformer
 
+Vous pouvez accéder à l'ensemble des données [ici](https://ignf.github.io/FLAIR/#FLAIR2).
+
 ## Entraînement
 
 La solution proposée est d'utilisée différents type de preprocessing des données afin a créer de la variété dans nos données. Nous avons entrainé 4 segformers avec différents processing :
@@ -56,21 +58,8 @@ pip install -r requirements.txt
 
 Vous pouvez accéder aux données [ici](https://ignf.github.io/FLAIR/#FLAIR2).
 
-| Data                                        | Size      | Type  | Link                                        |
-|---------------------------------------------|-----------|-------|---------------------------------------------|
-| Aerial images - train                       | 50.7 Go   | .zip  | -                                           |
-| Aerial images - test                        | 13.4 Go   | .zip  | -                                           |
-| Sentinel-2 images - train                   | 22.8 Go   | .zip  | -                                           |
-| Sentinel-2 images - test                    | 6 Go      | .zip  | -                                           |
-| Labels - train                              | 485 Mo    | .zip  | -                                           |
-| Labels - test                               | 108 Mo    | .zip  | -                                           |
-| Aerial metadata                             | 16.1 Mo   | .json | -                                           |
-| Aerial <-> Sentinel-2 matching dict         | 16.1 Mo   | .json | -                                           |
-| Areas shapes                                | 392 Ko    | .gpkg | -                                           |
 
-3. **Prétraitement des Données Sentinel**
 
-Exécutez `preprocess_sentinel_data.py`.
 
 4. **Conversion des Modèles en ONNX FP16**
 
