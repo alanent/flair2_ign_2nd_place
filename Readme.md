@@ -9,7 +9,7 @@ Ce référentiel contient les résultats de notre participation au concour FLAIR
 
 Nous avons entrainé 4 segformers avec 4 pré-processing et données différentes. Mis à part ces traitements, nous n'avons pas effectué d'augmentations de données supplémentaires.
 
-- Pour l'utilisation des données sentinels-2, nous avons filtrer les données contenant des nuages et de la neige. Nous enregistrons ensuite les données correpondantes à chaque image aérienne dans un fichier appelé `SEN_{Img_id}.npy`. Pour chaque image aérienne `IMG_{Img_id}.npy`, nous normalisons cette image par les moyennes et les écart-types de chaque chanaux (rgb) de l'image sentinel2 `SEN_{Img_id}.npy` précédement créée.
+- Pour l'utilisation des données sentinels-2, nous avons filtrer les données contenant des nuages et de la neige. Nous enregistrons ensuite les données Sentinel2 correpondantes à chaque image aérienne `IMG_{Img_id}.npy` dans un fichier appelé `SEN_{Img_id}.npy`. Pour chaque image aérienne `IMG_{Img_id}.npy`, nous normalisons cette image par les moyennes et les écart-types de chaque chanaux (rgb) de l'image sentinel2 `SEN_{Img_id}.npy` précédement créée.
 
 - Pour la normalisation imagenet, nous avons repris le preprocessing effectué par la classe SegformerFeatureExtractor de HuggingFace.
 
