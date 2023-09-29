@@ -38,9 +38,9 @@ Le résultat est utilisé pour réentrainer le modèle suivant sur 2 époques su
 
 ## Conversion des Modèles en ONNX FP16
 
-Exécutez `convert_models.py`.
+Exécutez `./scripts/convert_segformers_onnx.py`.
 
-Liens vers les poids des modèles ONNX (voir le tableau dans le notebook).
+
 
 
 ## Solution finale
