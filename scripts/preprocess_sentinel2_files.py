@@ -87,23 +87,6 @@ def load_data (config: dict, val_percent=0.8):
     return dict_train
 
 
-
-config_path = "./data/flair-2-config.yml" # Change to yours
-with open(config_path, "r") as f:
-    config = yaml.safe_load(f)
-
-
-# Creation of the train, val and test dictionnaries with the data file paths
-d_train = load_data(config)
-
-
-images = d_train["PATH_IMG"]
-labels = d_train["PATH_LABELS"]
-sentinel_images = d_train["PATH_SP_DATA"]
-sentinel_masks = d_train["PATH_SP_MASKS"] # Cloud masks
-sentinel_products = d_train["PATH_SP_DATES"] # Needed to get the dates of the sentinel images
-centroids = d_train["SP_COORDS"] # Position of the aerial image in the sentinel super area
-
 def filter_dates(img, mask, clouds:bool=2, area_threshold:float=0.2, proba_threshold:int=20):
     """ Mask : array T*2*H*W
         Clouds : 1 if filter on cloud cover, 0 if filter on snow cover, 2 if filter on both
@@ -135,6 +118,28 @@ def read_dates(txt_file: str) -> np.array:
     for file in products:
         dates_arr.append(datetime.datetime(2021, int(file[15:19][:2]), int(file[15:19][2:])))
     return np.array(dates_arr)
+
+
+####################################################################################################################################"
+#GET DATA LOCATION
+
+config_path = "./data/flair-2-config.yml" # Change to yours
+with open(config_path, "r") as f:
+    config = yaml.safe_load(f)
+
+
+# Creation of the train, val and test dictionnaries with the data file paths
+d_train = load_data(config)
+
+
+images = d_train["PATH_IMG"]
+labels = d_train["PATH_LABELS"]
+sentinel_images = d_train["PATH_SP_DATA"]
+sentinel_masks = d_train["PATH_SP_MASKS"] # Cloud masks
+sentinel_products = d_train["PATH_SP_DATES"] # Needed to get the dates of the sentinel images
+centroids = d_train["SP_COORDS"] # Position of the aerial image in the sentinel super area
+
+
 
 indices= range (0, len(images))
 
