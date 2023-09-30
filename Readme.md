@@ -48,13 +48,15 @@ Exécutez `./scripts/convert_segformers_onnx.py`.
 Notre solution est l'inférence simultanée des modèles : `SegFormer-B5 IGB Norm Aerial pseudo labeled` + `SegFormer-B5 RGB Norm Sentinel2`. Une sélection des résultats par classe est effectué dans un deuxième temps. Le temps total d'inférence des modèles sous l'environnement Colab décrit ci-dessous est de 46 minutes et le score obtenu est de 63.55 IoU. 
 
 
+[![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1mM4oTfXj6wthzVneihG-BHHI800BOz_M/view?usp=sharing)
+
+
 ### Environnement d'Exécution
 
 - **Environnement**: Colab Pro
-- **GPU**: NVIDIA Tesla T4
+- **GPU**: NVIDIA Tesla T4 16 Go
 - **RAM**: Haute capacité
 
-[![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1mM4oTfXj6wthzVneihG-BHHI800BOz_M/view?usp=sharing)
 
 ### Execution locale
 
